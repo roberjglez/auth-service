@@ -1,23 +1,17 @@
-package com.rjgonzalez.auth.insurances.challenge.config;
+package com.rjgonzalez.auth.insurances.challenge.dto;
 
 import org.springframework.beans.factory.annotation.Value;
 
 public class JwtConfig {
 
-	@Value("${security.jwt.uri:/auth/**}")
+	@Value("${security.jwt.uri}")
 	private String Uri;
 
-	@Value("${security.jwt.header:Authorization}")
+	@Value("${security.jwt.header}")
 	private String header;
 
-	@Value("${security.jwt.prefix:Bearer }")
+	@Value("${security.jwt.prefix}")
 	private String prefix;
-
-	@Value("${security.jwt.expiration:#{24*60*60}}")
-	private int expiration;
-
-	@Value("${security.jwt.secret:JwtSecretKey}")
-	private String secret;
 
 	/**
 	 * @return the uri
@@ -88,5 +82,11 @@ public class JwtConfig {
 	public void setSecret(String secret) {
 		this.secret = secret;
 	}
+
+	@Value("${security.jwt.expiration}")
+	private int expiration;
+
+	@Value("${security.jwt.secret}")
+	private String secret;
 
 }

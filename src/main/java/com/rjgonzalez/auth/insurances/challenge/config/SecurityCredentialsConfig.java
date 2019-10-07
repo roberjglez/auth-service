@@ -13,6 +13,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import com.rjgonzalez.auth.insurances.challenge.dto.JwtConfig;
 import com.rjgonzalez.auth.insurances.challenge.filter.JwtUsernameAndPasswordAuthenticationFilter;
 
 @EnableWebSecurity // Enable security config. This annotation denotes config for spring security.

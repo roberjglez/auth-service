@@ -19,7 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rjgonzalez.auth.insurances.challenge.config.JwtConfig;
+import com.rjgonzalez.auth.insurances.challenge.dto.JwtConfig;
 import com.rjgonzalez.auth.insurances.challenge.dto.UserCredentials;
 
 import io.jsonwebtoken.Jwts;
